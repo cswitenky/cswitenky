@@ -18,6 +18,8 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.46",
     "ts-migrate": "^0.1.35"
   }
 }
