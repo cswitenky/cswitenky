@@ -13,9 +13,9 @@ export default function Home({ allPostsData }: any) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hello, I'm Connor. Welcome to my website built with (Next.js)[]. This
-          website is under construction, so please excuse the mess while I work
-          on it.
+          Hello, I'm Connor. Welcome to my website built with{" "}
+          {<a href="http://nextjs.org">Next.js</a>}. This website is under
+          construction, so please excuse the mess while I work on it.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
