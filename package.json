@@ -15,7 +15,7 @@
     "remark-html": "^15.0.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": "18.17.1"
   },
   "devDependencies": {
     "@types/node": "20.10.5",
