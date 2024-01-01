@@ -14,7 +14,7 @@ export default function Layout({ children, home }: any) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Connor Switenky's personal website."
         />
         <meta
           property="og:image"
@@ -23,7 +23,6 @@ export default function Layout({ children, home }: any) {
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
@@ -59,11 +58,11 @@ export default function Layout({ children, home }: any) {
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
+      <footer className={styles.footer}>
+        <a href="/referral">Referral links</a>
+        <br />
+        <a href="/">https://switenky.com</a>
+      </footer>
     </div>
   );
 }
