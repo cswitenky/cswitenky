@@ -5,7 +5,6 @@ import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 
 export default function Post({ postData, adjacentPosts }: any) {
-  console.log(adjacentPosts[0]);
   const previousPost = adjacentPosts[0];
   const nextPost = adjacentPosts[1];
 
@@ -34,7 +33,7 @@ export default function Post({ postData, adjacentPosts }: any) {
               )}
             </th>
             <th>
-              <a href="/posts">🔗 All Posts</a>
+              <a href="/posts">📫 All Posts</a>
             </th>
             <th style={{ textAlign: "right", width: "40%" }}>
               {nextPost && (

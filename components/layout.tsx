@@ -30,8 +30,8 @@ export default function Layout({ children, home }: any) {
                 priority
                 src="/images/cswitenky.jpg"
                 className={utilStyles.borderCircle}
-                height={home ? 144 : 128}
-                width={home ? 144 : 128}
+                height={home ? 180 : 144}
+                width={home ? 180 : 144}
                 alt={"Connor Switenky"}
               />
               <h1 className={utilStyles.heading2Xl}>Connor Switenky</h1>
@@ -40,7 +40,8 @@ export default function Layout({ children, home }: any) {
         </section>
       </header>
       <main>{children}</main>
-      <footer>
+      <footer style={{ textAlign: "center" }}>
+        <hr />
         <a href="/">https://switenky.com</a>
       </footer>
     </div>
