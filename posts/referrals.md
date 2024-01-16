@@ -9,10 +9,12 @@ I'm a fan of credit card churning and have earned thousands of dollars in reward
 
 If you're considering applying for a new credit card, please consider using one of my referral links below. I'll get a bonus if you're approved, and you'll get a bonus too!
 
-- [Chase Sapphire Preferred](https://www.referyourchasecard.com/6j/B6PZTWK1BW)
+- [Chase Sapphire Preferred](https://www.referyourchasecard.com/6j/B6PZTWK1BW) _($95 annual fee)_
 - [Chase Freedom](https://www.referyourchasecard.com/18o/JJM3TPE58A)
 - [Discover It](https://refer.discover.com/s/xgc4r2?advocate.partner_share_id=572672151)
 - [Bilt Rewards](https://bilt.page/r/TBGL-GYH6)
+
+Unless otherwise explicitly stated, the credit cards mentioned above do not have an annual fee.
 
 ## 🏦 Bank Accounts
 
