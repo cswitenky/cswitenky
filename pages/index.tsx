@@ -1,9 +1,12 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+
+const name = "Connor Switenky";
 
 export default function Home({ allPostsData }: any) {
   return (
@@ -19,18 +22,21 @@ export default function Home({ allPostsData }: any) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+        <h2 className={utilStyles.headingLg}>📫 Recent Posts</h2>
+        <ul>
           {allPostsData.map(({ id, date, title }: any) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
+            <li key={id}>
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
+              {" - "}
+              <Link href={`/posts/${id}`}>{title}</Link>
             </li>
           ))}
         </ul>
+        <p>
+          See all posts <a href="/posts">here</a>.
+        </p>
       </section>
     </Layout>
   );

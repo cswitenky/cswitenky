@@ -36,6 +36,17 @@ export function getSortedPostsData() {
   });
 }
 
+export function getAdjacentPosts(id: any) {
+  const sortedPostsData = getSortedPostsData();
+
+  const currentPostIndex = sortedPostsData.findIndex((x) => x.id == id);
+
+  const previousPost = sortedPostsData[currentPostIndex + 1] ?? null;
+  const nextPost = sortedPostsData[currentPostIndex - 1] ?? null;
+
+  return [previousPost, nextPost];
+}
+
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName: any) => {
