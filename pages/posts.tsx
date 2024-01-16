@@ -7,7 +7,7 @@ import Date from "../components/date";
 export default function Posts({ allPostsData }: any) {
   return (
     <Layout>
-      <h1>All Posts</h1>
+      <h1>📫 All Posts</h1>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         {allPostsData.map(({ id, date, title }: any) => (
           <li key={id}>
