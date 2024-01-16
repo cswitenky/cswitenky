@@ -25,7 +25,7 @@ export default function Home({ allPostsData }: any) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>📫 Recent Posts</h2>
         <ul>
-          {allPostsData.map(({ id, date, title }: any) => (
+          {allPostsData.slice(0, 5).map(({ id, date, title }: any) => (
             <li key={id}>
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />

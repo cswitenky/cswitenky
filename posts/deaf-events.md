@@ -1,5 +1,5 @@
 ---
-title: "Deaf Events in Seattle"
+title: "🧏 Deaf Events in Seattle"
 date: "2024-01-15"
 ---
 
@@ -32,3 +32,5 @@ Remember to check out [Deaf Spotlight](https://www.deafspotlight.org/) for upcom
 ### Do-do now?
 
 Go to one of these events! You'll be glad you did. 😁
+
+🤟

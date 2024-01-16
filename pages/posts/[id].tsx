@@ -20,7 +20,7 @@ export default function Post({ postData, adjacentPosts }: any) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      <table style={{ width: "100%" }}>
+      <table style={{ width: "100%"}}>
         <tbody>
           <tr>
             <th style={{ textAlign: "left", width: "40%" }}>
