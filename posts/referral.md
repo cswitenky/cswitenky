@@ -5,11 +5,9 @@ date: "2023-12-31"
 
 ## 💳 Credit Cards
 
-I love credit cards. They're a great way to earn rewards on your everyday spending
+I'm a fan of credit card churning and have earned thousands of dollars in rewards at expense of the credit card companies.
 
-If you're considering applying for a new credit card, please consider
-using one of my referral links below. I'll get a bonus if you're
-approved, and you'll get a bonus too!
+If you're considering applying for a new credit card, please consider using one of my referral links below. I'll get a bonus if you're approved, and you'll get a bonus too!
 
 - [Chase Sapphire Preferred](https://www.referyourchasecard.com/6j/B6PZTWK1BW)
 - [Chase Freedom](https://www.referyourchasecard.com/18o/JJM3TPE58A)
@@ -18,9 +16,7 @@ approved, and you'll get a bonus too!
 
 ## 🏦 Bank Accounts
 
-I encourage you to open a SoFi Money account to earn ~4.5% APY interest on your
-savings. It's a great place to park your emergency fund. You can also
-get a bonus if you use my referral link below.
+I encourage you to open a SoFi Money account to earn ~4.5% APY interest on your savings. It's a great place to park your emergency fund whereas most banks offer just ~0.1% APY. We can also get a bonus if you use my referral link below.
 
 - [SoFi Checking/Savings](https://www.sofi.com/invite/money?gcp=ee5e268e-69b3-4e6c-bcc1-560f1cdd595f&isAliasGcp=false)
 
