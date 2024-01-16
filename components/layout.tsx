@@ -25,8 +25,9 @@ export default function Layout({ children, home }: any) {
       <header className={styles.header}>
         <section className={utilStyles.headingMd}>
           <>
-            <a href="/">
+            <a href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
               <Image
+                style={{ display: "block", marginLeft: "auto", marginRight: "auto" }}
                 priority
                 src="/images/cswitenky.jpg"
                 className={utilStyles.borderCircle}
@@ -40,7 +41,7 @@ export default function Layout({ children, home }: any) {
         </section>
       </header>
       <main>{children}</main>
-      <footer style={{ textAlign: "center" }}>
+      <footer style={{ textAlign: "center",  marginTop: "30px"  }}>
         <hr />
         <a href="/">https://switenky.com</a>
       </footer>
