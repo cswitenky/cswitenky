@@ -13,13 +13,13 @@ I've compiled a list of recurring Deaf events in Seattle. This is not an exhaust
   - Tuesdays from 6-8PM @ various locations on University of Washington campus
 - [**Bellevue College ASL Club**](https://studentweb.bellevuecollege.edu/asl/)
   - Wednesdays from 7-9PM @ Factoria Mall
+- [**ASL Classes (and social)**](https://www.facebook.com/groups/aslatthecuff/)
+  - Thursdays from 6-8PM @ CC Attle's on Olive Way
+- [**Deaf Night Out**](https://www.facebook.com/DeafNightOutSeattle/)
+  - First Saturday of each month @ various locations
 - [**Visually Speaking**](https://www.visuallyspeaking.info/)
   - Sundays from 1-3PM @ Victrola Coffee on 15th Ave
   - Various auxiliary events throughout the month
-- [**ASL Classes (and social)**](https://www.facebook.com/groups/aslatthecuff/)
-  - Tuesdays from 6-8PM @ CC Attle's on Olive Way
-- [**Deaf Night Out**](https://www.facebook.com/DeafNightOutSeattle/)
-  - First Saturday of each month @ various locations
 
 Those events are all free to attend and open to the public. If you're new to the Deaf community, don't be afraid to go to these events alone. You'll be welcomed with open arms. 😊
 
