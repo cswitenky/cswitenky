@@ -18,9 +18,6 @@ export default function Home({ allPostsData }: any) {
         <p>
           Hello, I'm Connor. Welcome to my little corner of the internet! 
         </p>
-        <p>
-          Be warned that this website is under construction, so please excuse the mess while I work on it.
-        </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>📫 Recent Posts</h2>
