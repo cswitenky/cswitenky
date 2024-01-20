@@ -15,9 +15,7 @@ export default function Home({ allPostsData }: any) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          Hello, I'm Connor. Welcome to my little corner of the internet! 
-        </p>
+        <p>Hello, I'm Connor. Welcome to my little corner of the internet!</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>📫 Recent Posts</h2>
