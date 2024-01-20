@@ -48,7 +48,8 @@ export default function Layout({ children, home }: any) {
       <footer style={{ textAlign: "center", marginTop: "30px" }}>
         <hr />
         <a href="/">https://switenky.com</a>
-        <a href="/rss">
+        {/* TODO: Add RSS feed */}
+        {/* <a href="/rss">
           <Image
             style={{
               display: "block",
@@ -62,7 +63,7 @@ export default function Layout({ children, home }: any) {
             width={16}
             alt={"rss"}
           />
-        </a>
+        </a> */}
       </footer>
     </div>
   );
