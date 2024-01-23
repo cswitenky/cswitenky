@@ -12,7 +12,7 @@ export default function Layout({ children, home }: any) {
       <Script
         async
         src="https://analytics-switenky.azurewebsites.net/script.js"
-        data-website-id="3a4064dd-61ec-4b29-a7b3-ab1a864c5406"
+        data-website-id="25774fa5-eab7-435a-8fe3-3b8761f6a89f"
       />
       <Head>
         <link rel="icon" href="/favicon.ico" />
