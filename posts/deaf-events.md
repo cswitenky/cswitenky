@@ -10,7 +10,7 @@ I've compiled a list of recurring Deaf events in Seattle. This is not an exhaust
 ### Recurring Events
 
 - [**UW ASL Club**](https://www.instagram.com/uwaslclub/)
-  - Tuesdays from 6-8PM @ various locations on University of Washington campus
+  - Mondays from 6-8PM @ various locations on University of Washington campus
 - [**Bellevue College ASL Club**](https://studentweb.bellevuecollege.edu/asl/)
   - Wednesdays from 7-9PM @ Factoria Mall
 - [**ASL Classes (and social)**](https://www.facebook.com/groups/aslatthecuff/)

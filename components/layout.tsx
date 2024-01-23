@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
+import Script from "next/script";
 
 export const siteTitle = "Connor Switenky";
 
@@ -15,6 +16,10 @@ export default function Layout({ children, home }: any) {
           content="Connor Switenky's personal website."
         />
         <meta name="og:title" content={siteTitle} />
+        <Script
+          src="https://us.umami.is/script.js"
+          data-website-id="acb2aff9-c7ee-4e36-b4d7-80e9dab09509"
+        />
       </Head>
       <header className={styles.header}>
         <section className={utilStyles.headingMd}>
