@@ -9,6 +9,11 @@ export const siteTitle = "Connor Switenky";
 export default function Layout({ children, home }: any) {
   return (
     <div className={styles.container}>
+      <Script
+        async
+        src="https://analytics-switenky.azurewebsites.net/script.js"
+        data-website-id="3a4064dd-61ec-4b29-a7b3-ab1a864c5406"
+      />
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -16,10 +21,6 @@ export default function Layout({ children, home }: any) {
           content="Connor Switenky's personal website."
         />
         <meta name="og:title" content={siteTitle} />
-        <Script
-          src="https://us.umami.is/script.js"
-          data-website-id="acb2aff9-c7ee-4e36-b4d7-80e9dab09509"
-        />
       </Head>
       <header className={styles.header}>
         <section className={utilStyles.headingMd}>
