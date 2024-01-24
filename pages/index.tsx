@@ -1,12 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "../styles/utils.module.scss";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-
-const name = "Connor Switenky";
 
 export default function Home({ allPostsData }: any) {
   return (

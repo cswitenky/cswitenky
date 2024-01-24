@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import Image from "next/image";
-import utilStyles from "../styles/utils.module.css";
+import styles from "./404.module.scss";
 
 export default function NotFound() {
   return (
@@ -12,11 +12,8 @@ export default function NotFound() {
       <main>
         <section style={{ textAlign: "center" }}>
           <Image
-            style={{
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
+            style={{}}
+            className={styles.image}
             priority
             src="/404.png"
             height={225}

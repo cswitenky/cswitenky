@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
+import styles from "./layout.module.scss";
+import utilStyles from "../styles/utils.module.scss";
 import Image from "next/image";
 import Script from "next/script";
 
