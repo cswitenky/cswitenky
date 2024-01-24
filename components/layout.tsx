@@ -3,6 +3,7 @@ import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Image from "next/image";
 import Script from "next/script";
+import Link from "next/link";
 
 export const siteTitle = "Connor Switenky";
 
@@ -25,7 +26,7 @@ export default function Layout({ children, home }: any) {
       <header className={styles.header}>
         <section className={utilStyles.headingMd}>
           <>
-            <a href="/" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
               <Image
                 style={{
                   display: "block",
@@ -40,14 +41,14 @@ export default function Layout({ children, home }: any) {
                 alt={"Connor Switenky"}
               />
               <h1 className={utilStyles.heading2Xl}>Connor Switenky</h1>
-            </a>
+            </Link>
           </>
         </section>
       </header>
       <main>{children}</main>
       <footer style={{ textAlign: "center", marginTop: "30px" }}>
         <hr />
-        <a href="/">https://switenky.com</a>
+        <Link href="/">https://switenky.com</Link>
         {/* TODO: Add RSS feed */}
         {/* <a href="/rss">
           <Image

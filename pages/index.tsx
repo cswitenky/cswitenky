@@ -28,7 +28,7 @@ export default function Home({ allPostsData }: any) {
           ))}
         </ul>
         <p>
-          See all posts <a href="/posts">here</a>.
+          See all posts <Link href="/posts">here</Link>.
         </p>
       </section>
     </Layout>
