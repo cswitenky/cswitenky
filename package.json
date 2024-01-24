@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "next-sitemap && next build",
+    "build": "next build",
+    "postbuild": "next-sitemap",
     "dev": "next dev",
     "start": "next start"
   },
