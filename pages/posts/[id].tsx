@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import { getAdjacentPosts, getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
-import utilStyles from "../../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.scss";
 
 export default function Post({ postData, adjacentPosts }: any) {
   const previousPost = adjacentPosts[0];
@@ -20,7 +20,7 @@ export default function Post({ postData, adjacentPosts }: any) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      <table style={{ width: "100%"}}>
+      <table style={{ width: "100%" }}>
         <tbody>
           <tr>
             <th style={{ textAlign: "left", width: "40%" }}>
