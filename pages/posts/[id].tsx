@@ -1,9 +1,9 @@
-import Layout from "../../components/layout";
-import { getAdjacentPosts, getAllPostIds, getPostData } from "../../lib/posts";
-import Head from "next/head";
-import Date from "../../components/date";
-import utilStyles from "../../styles/utils.module.scss";
-import Link from "next/link";
+import Layout from '../../components/layout';
+import { getAdjacentPosts, getAllPostIds, getPostData } from '../../lib/posts';
+import Head from 'next/head';
+import Date from '../../components/date';
+import utilStyles from '../../styles/utils.module.scss';
+import Link from 'next/link';
 
 export default function Post({ postData, adjacentPosts }: any) {
   const previousPost = adjacentPosts[0];
@@ -21,10 +21,10 @@ export default function Post({ postData, adjacentPosts }: any) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      <table style={{ width: "100%" }}>
+      <table style={{ width: '100%' }}>
         <tbody>
           <tr>
-            <th style={{ textAlign: "left", width: "40%" }}>
+            <th style={{ textAlign: 'left', width: '40%' }}>
               {previousPost && (
                 <Link href={`/posts/${previousPost.id}`}>
                   ← Previous
@@ -36,7 +36,7 @@ export default function Post({ postData, adjacentPosts }: any) {
             <th>
               <Link href="/posts">📫 All Posts</Link>
             </th>
-            <th style={{ textAlign: "right", width: "40%" }}>
+            <th style={{ textAlign: 'right', width: '40%' }}>
               {nextPost && (
                 <Link href={`/posts/${nextPost.id}`}>
                   Next →
