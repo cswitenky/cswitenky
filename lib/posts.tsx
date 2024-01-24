@@ -6,7 +6,13 @@ import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export function getSortedPostsData() {
+export interface PostData {
+  id: string;
+  contentHtml?: string;
+  [key: string]: any;
+}
+
+export const getSortedPostsData = (): PostData[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName: any) => {
@@ -34,9 +40,9 @@ export function getSortedPostsData() {
       return -1;
     }
   });
-}
+};
 
-export function getAdjacentPosts(id: any) {
+export const getAdjacentPosts = (id: any): PostData[] => {
   const sortedPostsData = getSortedPostsData();
 
   const currentPostIndex = sortedPostsData.findIndex((x) => x.id == id);
@@ -45,9 +51,9 @@ export function getAdjacentPosts(id: any) {
   const nextPost = sortedPostsData[currentPostIndex - 1] ?? null;
 
   return [previousPost, nextPost];
-}
+};
 
-export function getAllPostIds() {
+export const getAllPostIds = (): any => {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames.map((fileName: any) => {
     return {
@@ -56,9 +62,9 @@ export function getAllPostIds() {
       },
     };
   });
-}
+};
 
-export async function getPostData(id: any) {
+export const getPostData = async (id: any): Promise<PostData> => {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -77,4 +83,4 @@ export async function getPostData(id: any) {
     contentHtml,
     ...matterResult.data,
   };
-}
+};

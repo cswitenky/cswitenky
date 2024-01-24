@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.scss';
 import Link from 'next/link';
+import config from '../../config';
 
 export default function Post({ postData, adjacentPosts }: any) {
   const previousPost = adjacentPosts[0];
@@ -12,7 +13,7 @@ export default function Post({ postData, adjacentPosts }: any) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{`${postData.title} — ${config.MY_NAME}`}</title>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

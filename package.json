@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "date-fns": "^2.29.3",
-    "globby": "^14.0.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "next-sitemap": "^4.2.3",
@@ -16,6 +15,7 @@
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
+    "rss": "^1.2.2",
     "sass": "^1.70.0"
   },
   "engines": {
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/node": "20.10.5",
     "@types/react": "18.2.46",
+    "@types/rss": "^0.0.32",
     "ts-migrate": "^0.1.35"
   }
 }
