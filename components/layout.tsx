@@ -1,11 +1,11 @@
-import Head from "next/head";
-import styles from "./layout.module.scss";
-import utilStyles from "../styles/utils.module.scss";
-import Image from "next/image";
-import Script from "next/script";
-import Link from "next/link";
+import Head from 'next/head';
+import styles from './layout.module.scss';
+import utilStyles from '../styles/utils.module.scss';
+import Image from 'next/image';
+import Script from 'next/script';
+import Link from 'next/link';
 
-export const siteTitle = "Connor Switenky";
+export const siteTitle = 'Connor Switenky';
 
 export default function Layout({ children, home }: any) {
   return (
@@ -26,19 +26,19 @@ export default function Layout({ children, home }: any) {
       <header className={styles.header}>
         <section className={utilStyles.headingMd}>
           <>
-            <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
               <Image
                 style={{
-                  display: "block",
-                  marginLeft: "auto",
-                  marginRight: "auto",
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
                 }}
                 priority
                 src="/images/cswitenky.jpg"
                 className={utilStyles.borderCircle}
                 height={home ? 180 : 144}
                 width={home ? 180 : 144}
-                alt={"Connor Switenky"}
+                alt={'Connor Switenky'}
               />
               <h1 className={utilStyles.heading2Xl}>Connor Switenky</h1>
             </Link>
@@ -46,7 +46,7 @@ export default function Layout({ children, home }: any) {
         </section>
       </header>
       <main>{children}</main>
-      <footer style={{ textAlign: "center", marginTop: "30px" }}>
+      <footer style={{ textAlign: 'center', marginTop: '30px' }}>
         <hr />
         <Link href="/">https://switenky.com</Link>
         {/* TODO: Add RSS feed */}
