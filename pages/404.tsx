@@ -12,7 +12,6 @@ export default function NotFound() {
       <main>
         <section style={{ textAlign: "center" }}>
           <Image
-            style={{}}
             className={styles.image}
             priority
             src="/404.png"
