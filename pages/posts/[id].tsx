@@ -3,6 +3,7 @@ import { getAdjacentPosts, getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.scss";
+import Link from "next/link";
 
 export default function Post({ postData, adjacentPosts }: any) {
   const previousPost = adjacentPosts[0];
@@ -25,23 +26,23 @@ export default function Post({ postData, adjacentPosts }: any) {
           <tr>
             <th style={{ textAlign: "left", width: "40%" }}>
               {previousPost && (
-                <a href={`/posts/${previousPost.id}`}>
+                <Link href={`/posts/${previousPost.id}`}>
                   ← Previous
                   <br />
                   {previousPost.title}
-                </a>
+                </Link>
               )}
             </th>
             <th>
-              <a href="/posts">📫 All Posts</a>
+              <Link href="/posts">📫 All Posts</Link>
             </th>
             <th style={{ textAlign: "right", width: "40%" }}>
               {nextPost && (
-                <a href={`/posts/${nextPost.id}`}>
+                <Link href={`/posts/${nextPost.id}`}>
                   Next →
                   <br />
                   {nextPost.title}
-                </a>
+                </Link>
               )}
             </th>
           </tr>

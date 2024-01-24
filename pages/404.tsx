@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Image from "next/image";
 import styles from "./404.module.scss";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -18,10 +19,10 @@ export default function NotFound() {
             height={225}
             width={400}
             alt={"404"}
-          ></Image>
+          />
           <h1>Page Not Found</h1>
           <p>
-            <a href="/">Go Home</a>
+            <Link href="/">Go Home</Link>
           </p>
         </section>
       </main>
