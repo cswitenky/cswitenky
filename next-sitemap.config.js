@@ -1,6 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
+const config = require('./config');
+
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://switenky.com',
+  siteUrl: config.BASE_URL,
   generateRobotsTxt: true,
   outDir: './out',
   // ...other options

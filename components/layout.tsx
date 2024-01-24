@@ -4,8 +4,7 @@ import utilStyles from '../styles/utils.module.scss';
 import Image from 'next/image';
 import Script from 'next/script';
 import Link from 'next/link';
-
-export const siteTitle = 'Connor Switenky';
+import config from '../config';
 
 export default function Layout({ children, home }: any) {
   return (
@@ -19,9 +18,9 @@ export default function Layout({ children, home }: any) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Connor Switenky's personal website."
+          content={`${config.MY_NAME}'s personal website.`}
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={config.MY_NAME} />
       </Head>
       <header className={styles.header}>
         <section className={utilStyles.headingMd}>
@@ -40,7 +39,7 @@ export default function Layout({ children, home }: any) {
                 width={home ? 180 : 144}
                 alt={'Connor Switenky'}
               />
-              <h1 className={utilStyles.heading2Xl}>Connor Switenky</h1>
+              <h1 className={utilStyles.heading2Xl}>{config.MY_NAME}</h1>
             </Link>
           </>
         </section>
@@ -48,7 +47,7 @@ export default function Layout({ children, home }: any) {
       <main>{children}</main>
       <footer style={{ textAlign: 'center', marginTop: '30px' }}>
         <hr />
-        <Link href="/">https://switenky.com</Link>
+        <Link href="/">{config.BASE_URL}</Link>
         {/* TODO: Add RSS feed */}
         {/* <a href="/rss">
           <Image

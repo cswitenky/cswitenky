@@ -3,12 +3,13 @@ import Layout from '../components/layout';
 import Image from 'next/image';
 import styles from './404.module.scss';
 import Link from 'next/link';
+import config from '../config';
 
 export default function NotFound() {
   return (
     <Layout>
       <Head>
-        <title>Oops!</title>
+        <title>{`Page Not Found — ${config.MY_NAME}`}</title>
       </Head>
       <main>
         <section style={{ textAlign: 'center' }}>

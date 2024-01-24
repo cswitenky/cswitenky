@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import config from '../config';
 
 export default function Home({ allPostsData }: any) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{config.MY_NAME}</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm Connor. Welcome to my little corner of the internet!</p>
