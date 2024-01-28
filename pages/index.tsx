@@ -32,6 +32,29 @@ export default function Home({ allPostsData }: any) {
           See all posts <Link href="/posts">here</Link>.
         </p>
       </section>
+      <section className={utilStyles.headingMd}>
+        <h2 className={utilStyles.headingLg}>🔗 Connect with me</h2>
+        <div style={{ textAlign: 'center' }}>
+          <a href="https://github.com/cswitenky" style={{ margin: '0px 10px' }}>
+            🐙 GitHub
+          </a>
+          <a
+            href="https://www.thingiverse.com/cswitenky"
+            style={{ margin: '0px 10px' }}
+          >
+            🚀 Thingiverse
+          </a>
+          <a
+            href="https://www.youtube.com/c/switenky"
+            style={{ margin: '0px 10px' }}
+          >
+            🎥 YouTube
+          </a>
+          {/* <a href="https://github.com/sponsors/cswitenky?frequency=one-time">
+            ❤️ Sponsor me
+          </a> */}
+        </div>
+      </section>
     </Layout>
   );
 }
