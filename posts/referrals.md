@@ -1,5 +1,5 @@
 ---
-title: '🔗 Referral Links'
+title: '👥 Referral Links'
 date: '2023-12-31'
 ---
 
