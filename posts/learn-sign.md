@@ -16,6 +16,10 @@ If you don't have the opportunity to learn from Deaf people, there are still ple
 - ### [Handspeak](https://www.handspeak.com/)
   - [Jolanta Lapiak](https://www.handspeak.com/learn/1/) is a Deaf ASL instructor, and the founder of Handspeak. The dictionary on this website is one of the best I've found.
 
+### Fingerspelling
+
+I would strongly recommend learning fingerspelling early on. It's a very important part of ASL, and it's used quite often. It's also a great way to learn new vocabulary and can serve as a fallback when you don't know a sign. Just be careful not to [overuse it](https://www.youtube.com/watch?v=fYAVL1Dxokk)!
+
 ## Local Resources
 
 If you by chance live in the Seattle area, there are a few local resources I'd recommend.
