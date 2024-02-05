@@ -29,7 +29,7 @@ export default function Home({ allPostsData }: any) {
           ))}
         </ul>
         <p>
-          See all posts <Link href="/posts">here</Link>.
+          See <Link href="/posts">all posts</Link>.
         </p>
       </section>
       <section className={utilStyles.headingMd}>
