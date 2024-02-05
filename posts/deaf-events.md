@@ -7,7 +7,7 @@ Have you ever wanted to learn [American Sign Language](https://en.wikipedia.org/
 
 I've compiled a list of recurring Deaf events in Seattle. This is not an exhaustive list, but it's a good start to get you connected with the Deaf community in Seattle.
 
-### Recurring Events
+## Recurring Events
 
 - [**UW ASL Club**](https://www.instagram.com/uwaslclub/)
   - Mondays from 6-8PM @ various locations on University of Washington campus
@@ -23,12 +23,12 @@ I've compiled a list of recurring Deaf events in Seattle. This is not an exhaust
 
 Those events are all free to attend and open to the public. If you're new to the Deaf community, don't be afraid to go to these events alone. You'll be welcomed with open arms. 😊
 
-### Additional Resources
+## Additional Resources
 
 Remember to check out [Deaf Spotlight](https://www.deafspotlight.org/) for upcoming events. They host a variety of events throughout the year, including the [Seattle Deaf Film Festival](https://www.deafspotlight.org/sdff).
 
 [Hearing, Speech, and Deaf Center](https://hsdc.org) (HSDC) is also an excellent resource.
 
-### Do-do now?
+## Do-do now?
 
 Go to one of these events! You'll be glad you did. 😁
