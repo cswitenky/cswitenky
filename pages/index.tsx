@@ -29,7 +29,7 @@ export default function Home({ allPostsData }: any) {
           ))}
         </ul>
         <p>
-          See all posts <Link href="/posts">here</Link>.
+          See <Link href="/posts">all posts</Link>.
         </p>
       </section>
       <section className={utilStyles.headingMd}>
@@ -50,9 +50,7 @@ export default function Home({ allPostsData }: any) {
           >
             🎥 YouTube
           </a>
-          {/* <a href="https://github.com/sponsors/cswitenky?frequency=one-time">
-            ❤️ Sponsor me
-          </a> */}
+          <a href="https://github.com/sponsors/cswitenky">❤️ Sponsor me</a>
         </div>
       </section>
     </Layout>
