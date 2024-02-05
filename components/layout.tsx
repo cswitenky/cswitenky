@@ -37,7 +37,7 @@ export default function Layout({ children, home }: any) {
                 className={utilStyles.borderCircle}
                 height={home ? 180 : 144}
                 width={home ? 180 : 144}
-                alt={'Connor Switenky'}
+                alt={'Avatar of Connor Switenky'}
               />
               <h1 className={utilStyles.heading2Xl}>{config.MY_NAME}</h1>
             </Link>
