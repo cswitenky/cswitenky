@@ -9,11 +9,11 @@ import config from '../config';
 export default function Layout({ children, home }: any) {
   return (
     <div className={styles.container}>
-      {/* <Script
+      <Script
         async
-        src="https://analytics-switenky.azurewebsites.net/script.js"
-        data-website-id="25774fa5-eab7-435a-8fe3-3b8761f6a89f"
-      /> */}
+        src="https://cloud.umami.is/script.js"
+        data-website-id="0dc1f4cd-e2c8-4aa3-99bb-1c640d99ef01"
+      />
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
