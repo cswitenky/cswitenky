@@ -8,11 +8,48 @@ import config from '../config';
 import { ThemeProvider, useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
-enum Theme {
+export enum Theme {
   Light = 'light',
   Dark = 'dark',
   Auto = 'auto',
 }
+
+const RssIcon = () => (
+  <Link
+    href="/rss.xml"
+    aria-label="Go to RSS Feed"
+    onClick={(e) => {
+      if (window.location.pathname === '/rss.xml') {
+        e.preventDefault();
+      }
+    }}
+  >
+    <Image
+      style={{
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: '10px',
+      }}
+      priority
+      src="/rss.svg"
+      height={16}
+      width={16}
+      alt="RSS Feed Icon"
+    />
+  </Link>
+);
+
+const PersonalAppsLink = () => (
+  <Link
+    href="https://myapplications.microsoft.com/?tenant=22e1f764-c1c7-4674-8540-f75bda2b6f14"
+    style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+    aria-label="Go to Personal Apps with Microsoft Entra Login"
+  >
+    Personal Apps (Microsoft Entra Login) 🔒
+  </Link>
+);
+
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
@@ -77,67 +114,57 @@ export default function Layout({ children, home }: any) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content={`${config.MY_NAME}'s personal website.`}
+          content={`${config.MY_FULL_NAME}'s personal website.`}
         />
-        <meta name="og:title" content={config.MY_NAME} />
+        <meta name="og:title" content={config.MY_FULL_NAME} />
       </Head>
-      <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', direction: 'inherit' }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          alignItems: 'center',
+          direction: 'inherit',
+        }}
+      >
         <ThemeSwitch />
       </div>
-      <header className={styles.header}>
+      <header className={styles.header} role="presentation" aria-hidden="true">
         <section className={utilStyles.headingMd}>
-          <>
-            <Link href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
-              <Image
-                style={{
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                }}
-                priority
-                src="/images/cswitenky.jpg"
-                className={utilStyles.borderCircle}
-                height={home ? 180 : 144}
-                width={home ? 180 : 144}
-                alt={'Avatar of Connor Switenky'}
-              />
-              <h1 className={utilStyles.heading2Xl}>{config.MY_NAME}</h1>
+            <Link
+            href="/"
+            style={{ color: 'inherit', textDecoration: 'none' }}
+            aria-label={`Go to ${config.MY_FIRST_NAME}'s home page`}
+            >
+            <Image
+              style={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              }}
+              priority
+              src="/images/cswitenky.jpg"
+              className={utilStyles.borderCircle}
+              height={home ? 180 : 144}
+              width={home ? 180 : 144}
+              alt={`Avatar of ${config.MY_FULL_NAME}`}
+            />
+            <h1 className={utilStyles.heading2Xl}>{config.MY_FULL_NAME}</h1>
             </Link>
-          </>
         </section>
       </header>
       <main>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </main>
       <footer style={{ textAlign: 'center', marginTop: '30px' }}>
         <hr />
-        <Link
-          href="https://myapplications.microsoft.com/?tenant=22e1f764-c1c7-4674-8540-f75bda2b6f14"
-          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-          Personal Apps (Microsoft Entra Login) 🔒
-        </Link>
+        <PersonalAppsLink />
         <hr />
-        <br/>
-        <Link href="/">{config.BASE_URL}</Link>
-
-        {/* TODO: Add RSS feed */}
-        {/* <a href="/rss">
-          <Image
-            style={{
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-              marginTop: "10px",
-            }}
-            priority
-            src="/rss.svg"
-            height={16}
-            width={16}
-            alt={"rss"}
-          />
-        </a> */}
+        <br />
+        <Link href="/" aria-label="Go to home page">
+          {config.BASE_URL}
+        </Link>
+        <br />
+        <RssIcon />
       </footer>
     </div>
   );
