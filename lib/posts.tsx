@@ -61,13 +61,19 @@ export const getAdjacentPosts = (id: any): PostData[] => {
 
 export const getAllPostIds = (): any => {
   const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName: any) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ''),
-      },
-    };
-  });
+  return fileNames
+    .filter((fileName: string) => {
+      // Check if it's a file and not a directory
+      const fullPath = path.join(postsDirectory, fileName);
+      return fs.statSync(fullPath).isFile();
+    })
+    .map((fileName: any) => {
+      return {
+        params: {
+          id: fileName.replace(/\.md$/, ''),
+        },
+      };
+    });
 };
 
 export const getPostData = async (id: any): Promise<PostData> => {
