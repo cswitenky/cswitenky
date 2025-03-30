@@ -3,7 +3,7 @@
   "scripts": {
     "build": "npx tsx ./generate-rss.tsx && next build",
     "postbuild": "next-sitemap",
-    "dev": "npx tsx ./generate-rss.tsx && next dev",
+    "dev": "next dev",
     "start": "next start"
   },
   "dependencies": {
