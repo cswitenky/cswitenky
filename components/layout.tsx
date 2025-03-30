@@ -119,27 +119,26 @@ export default function Layout({ children, home }: any) {
         <meta name="og:title" content={config.MY_FULL_NAME} />
       </Head>
       <div
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-          direction: 'inherit',
-        }}
+        className={styles.toggleThemeButtonParent}
       >
-        <ThemeSwitch />
+        <div
+          className={styles.toggleThemeButton}
+        >
+          <ThemeSwitch />
+        </div>
       </div>
       <header className={styles.header} role="presentation" aria-hidden="true">
         <section className={utilStyles.headingMd}>
-            <Link
+          <Link
             href="/"
             style={{ color: 'inherit', textDecoration: 'none' }}
             aria-label={`Go to ${config.MY_FIRST_NAME}'s home page`}
-            >
+          >
             <Image
               style={{
-              display: 'block',
-              marginLeft: 'auto',
-              marginRight: 'auto',
+                display: 'block',
+                marginLeft: 'auto',
+                marginRight: 'auto',
               }}
               priority
               src="/images/cswitenky.jpg"
@@ -149,7 +148,7 @@ export default function Layout({ children, home }: any) {
               alt={`Avatar of ${config.MY_FULL_NAME}`}
             />
             <h1 className={utilStyles.heading2Xl}>{config.MY_FULL_NAME}</h1>
-            </Link>
+          </Link>
         </section>
       </header>
       <main>
