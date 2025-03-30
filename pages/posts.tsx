@@ -10,21 +10,29 @@ export default function Posts({ allPostsData }: any) {
   return (
     <Layout>
       <Head>
-        <title>{`📫 All Posts — ${config.MY_NAME}`}</title>
+      <title>{`📫 All Posts — ${config.MY_FULL_NAME}`}</title>
       </Head>
       <h1>📫 All Posts</h1>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul>
-          {allPostsData.map(({ id, date, title }: any) => (
-            <li key={id}>
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-              {' - '}
-              <Link href={`/posts/${id}`}>{title}</Link>
-            </li>
-          ))}
-        </ul>
+      <section
+      className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
+      aria-labelledby="all-posts-heading"
+      >
+      <h2 id="all-posts-heading" className="sr-only">
+        List of all posts
+      </h2>
+      <ul>
+        {allPostsData.map(({ id, date, title }: any) => (
+        <li key={id}>
+          <small className={utilStyles.lightText}>
+          <Date dateString={date} />
+          </small>
+          {' - '}
+          <Link href={`/posts/${id}`}>
+          {title}
+          </Link>
+        </li>
+        ))}
+      </ul>
       </section>
     </Layout>
   );

@@ -10,10 +10,10 @@ export default function Home({ allPostsData }: any) {
   return (
     <Layout home>
       <Head>
-        <title>{config.MY_NAME}</title>
+        <title>{config.MY_FULL_NAME}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Connor. 👋</p>
+        <p>Hello, I'm {config.MY_FIRST_NAME}. 👋</p>
         <p>
           I'm a software engineer who loves solving everyday problems with tech. 
           Espeically coming up with creative and efficient solutions to make life 
