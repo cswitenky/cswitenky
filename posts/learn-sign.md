@@ -24,10 +24,10 @@ I would strongly recommend learning fingerspelling early on. It's a very importa
 
 If you by chance live in the Seattle area, there are a few local resources I'd recommend.
 
-- [🌲☔ Go to Deaf Events in Seattle](/posts/deaf-events)
-- [👁️🗣️ Visually Speaking](https://www.visuallyspeaking.info/)
-- [🏙️🌲 Bellevue College](https://www.bellevuecollege.edu/worldlanguages/departments/american-sign-language-asl/)
-- [🚪 More resources](https://hsdc.org/education/resources/)
+- Go to Deaf Events in Seattle
+- [Visually Speaking](https://www.visuallyspeaking.info/)
+- [Bellevue College ASL Classes](https://www.bellevuecollege.edu/worldlanguages/departments/american-sign-language-asl/)
+- [More resources at Hearing, Speech & Deaf Center (HSDC)](https://hsdc.org/education/resources/)
 
 ## Conclusion
 

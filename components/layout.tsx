@@ -47,7 +47,14 @@ export default function Layout({ children, home }: any) {
       <main>{children}</main>
       <footer style={{ textAlign: 'center', marginTop: '30px' }}>
         <hr />
+        <Link 
+          href="https://myapplications.microsoft.com/?tenant=22e1f764-c1c7-4674-8540-f75bda2b6f14"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            Personal Apps (Microsoft Entra Login) 🔒
+        </Link>
+        <br />
         <Link href="/">{config.BASE_URL}</Link>
+
         {/* TODO: Add RSS feed */}
         {/* <a href="/rss">
           <Image
