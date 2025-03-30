@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 export enum Theme {
   Light = 'light',
   Dark = 'dark',
-  Auto = 'auto',
+  Auto = 'system',
 }
 
 const RssIcon = () => (
