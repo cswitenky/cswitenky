@@ -27,14 +27,8 @@ const ThemeSwitch = () => {
     return null
   }
 
-  // if (theme === Theme.Auto) {
-
-
-
-
   return (
     <span>
-      {/* Theme: <br /> */}
       <button
         onClick={() => {
           switch (theme) {
