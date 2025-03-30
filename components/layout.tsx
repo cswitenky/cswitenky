@@ -42,7 +42,7 @@ const ThemeSwitch = () => {
               setTheme(Theme.Auto);
               break;
             default:
-              setTheme(Theme.Auto);
+              setTheme(Theme.Light);
           }
         }}
         className={styles.themeButton}
@@ -57,7 +57,7 @@ const ThemeSwitch = () => {
             case Theme.Light:
               return 'Light 🌞';
             default:
-              return 'Unknown';
+              return 'Auto ⚙️';
           }
         })()}
       </button>
