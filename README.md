@@ -1,17 +1,3 @@
 ### Hi there 👋
 
-<!--
-**cswitenky/cswitenky** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-This repository also contains my website, which is built using Next.js. The website is deployed using Github Actions and hosted with Azure Static Pages pointing to this repository. The website is available at [switenky.com](https://switenky.com).
-
-To get started, run the following commands:
-
-```
-npm install
-
-npm run dev
-```
-
-
--->
+I'm Connor Switenky, a software engineer passionate about fixing and optimizing everyday challenges through technology. I enjoy leveraging my skills to create innovative and efficient solutions that improve daily life.
