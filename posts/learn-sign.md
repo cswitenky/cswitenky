@@ -2,12 +2,15 @@
 title: '👐 So You Want to Learn Sign Language?'
 date: '2024-01-28'
 ---
+I've been asked a few times recently about how to learn [**American Sign Language**](https://en.wikipedia.org/wiki/American_Sign_Language) (ASL), so I wanted to share some advice for those interested in starting their journey.
 
-I've been asked a few times recently about how to learn [**American Sign Language**](https://en.wikipedia.org/wiki/American_Sign_Language) (ASL). Although I am culturally Deaf and fluent, I am not an ASL instructor. That being said, I do have some advice for those who want to learn ASL.
+The best way to learn ASL is to learn directly from Deaf people. This can include:
+- Enrolling in an ASL class taught by a Deaf instructor
+- Attending Deaf events in your area
+- Building friendships with Deaf individuals
+- Volunteering with organizations that serve the Deaf community
 
-It goes without saying that the _best way to learn ASL is to learn from Deaf people_. If you have the opportunity to take an ASL class from a Deaf instructor, **do it**! If you have the opportunity to attend a Deaf event, **do it**! If you have the opportunity to make Deaf friends, **do it**! There is no substitute for learning from Deaf people.
-
-If you don't have the opportunity to learn from Deaf people, there are still plenty of resources available online. I've compiled a list of resources below that I've found helpful.
+While nothing can replace the experience of learning from Deaf people, there are also many excellent online resources available for those who may not have access to in-person opportunities. Below, I've compiled a list of resources that I personally recommend.
 
 ## Online Resources
 
@@ -22,7 +25,7 @@ I would strongly recommend learning fingerspelling early on. It's a very importa
 
 ## Local Resources
 
-If you by chance live in the Seattle area, there are a few local resources I'd recommend.
+If you by chance live in the Seattle metropolitan area like I do, there are a few local resources I'd recommend.
 
 - Go to Deaf Events in Seattle
 - [Visually Speaking](https://www.visuallyspeaking.info/)
