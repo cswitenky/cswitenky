@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "npx tsx ./generate-rss.tsx && next build",
     "postbuild": "next-sitemap",
     "dev": "next dev",
     "start": "next start"
@@ -17,7 +17,8 @@
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "rss": "^1.2.2",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "tsx": "^4.19.3"
   },
   "engines": {
     "node": "23.10.0"
