@@ -119,6 +119,7 @@ export default function Layout({ children, home }: any) {
           Personal Apps (Microsoft Entra Login) 🔒
         </Link>
         <hr />
+        <br/>
         <Link href="/">{config.BASE_URL}</Link>
 
         {/* TODO: Add RSS feed */}
