@@ -18,6 +18,7 @@ const RssIcon = () => (
   <Link
     href="/rss.xml"
     aria-label="Go to RSS Feed"
+    data-umami-event="RSS Feed Button"
     onClick={(e) => {
       if (window.location.pathname === '/rss.xml') {
         e.preventDefault();
@@ -44,6 +45,7 @@ const PersonalAppsLink = () => (
   <Link
     href="https://myapplications.microsoft.com/?tenant=22e1f764-c1c7-4674-8540-f75bda2b6f14"
     style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+    data-umami-event="Personal Apps Link"
     aria-label="Go to Personal Apps with Microsoft Entra Login"
   >
     Personal Apps (Microsoft Entra Login) 🔒
@@ -64,39 +66,33 @@ const ThemeSwitch = () => {
     return null
   }
 
+  const nextTheme = () => {
+    switch (theme) {
+      case Theme.Auto:
+        return Theme.Light;
+      case Theme.Light:
+        return Theme.Dark;
+      case Theme.Dark:
+        return Theme.Auto;
+      default:
+        return Theme.Light;
+    }
+  }
+
   return (
     <span>
       <button
-        onClick={() => {
-          switch (theme) {
-            case Theme.Auto:
-              setTheme(Theme.Light);
-              break;
-            case Theme.Light:
-              setTheme(Theme.Dark);
-              break;
-            case Theme.Dark:
-              setTheme(Theme.Auto);
-              break;
-            default:
-              setTheme(Theme.Light);
-          }
-        }}
+        type="button"
+        data-umami-event={`Toggled Theme to '${nextTheme()}'`}
+        onClick={() => setTheme(nextTheme())}
         className={styles.themeButton}
         aria-label={`Change theme, current theme is ${theme}`}
       >
-        {(() => {
-          switch (theme) {
-            case Theme.Auto:
-              return 'Auto ⚙️';
-            case Theme.Dark:
-              return 'Dark 🌜';
-            case Theme.Light:
-              return 'Light 🌞';
-            default:
-              return 'Auto ⚙️';
-          }
-        })()}
+        {theme === Theme.Auto
+          ? 'Auto ⚙️'
+          : theme === Theme.Dark
+          ? 'Dark 🌜'
+          : 'Light 🌞'}
       </button>
     </span>
   );
@@ -111,6 +107,7 @@ export default function Layout({ children, home }: any) {
         data-website-id="0dc1f4cd-e2c8-4aa3-99bb-1c640d99ef01"
       />
       <Head>
+        <html lang="en" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
