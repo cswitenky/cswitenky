@@ -1,7 +1,7 @@
-import Layout from '../../components/layout';
+import Layout from '../../components/layout/Layout';
 import { getAdjacentPosts, getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import Date from '../../components/date';
+import Date from '../../components/ui/date/Date';
 import utilStyles from '../../styles/utils.module.scss';
 import Link from 'next/link';
 import config from '../../config';
@@ -25,29 +25,35 @@ export default function Post({ postData, adjacentPosts }: any) {
       <table style={{ width: '100%' }} aria-label="Post navigation">
         <tbody>
           <tr>
-        <th style={{ textAlign: 'left', width: '40%' }}>
-          {previousPost && (
-            <Link href={`/posts/${previousPost.id}`} aria-label={`Previous post: ${previousPost.title}`}>
-          ← Previous
-          <br />
-          <span aria-hidden="true">{previousPost.title}</span>
-            </Link>
-          )}
-        </th>
-        <th>
-          <Link href="/posts" aria-label="Go to all posts">
-            📫 All Posts
-          </Link>
-        </th>
-        <th style={{ textAlign: 'right', width: '40%' }}>
-          {nextPost && (
-            <Link href={`/posts/${nextPost.id}`} aria-label={`Next post: ${nextPost.title}`}>
-          Next →
-          <br />
-          <span aria-hidden="true">{nextPost.title}</span>
-            </Link>
-          )}
-        </th>
+            <th style={{ textAlign: 'left', width: '40%' }}>
+              {previousPost && (
+                <Link
+                  href={`/posts/${previousPost.id}`}
+                  aria-label={`Previous post: ${previousPost.title}`}
+                >
+                  ← Previous
+                  <br />
+                  <span aria-hidden="true">{previousPost.title}</span>
+                </Link>
+              )}
+            </th>
+            <th>
+              <Link href="/posts" aria-label="Go to all posts">
+                📫 All Posts
+              </Link>
+            </th>
+            <th style={{ textAlign: 'right', width: '40%' }}>
+              {nextPost && (
+                <Link
+                  href={`/posts/${nextPost.id}`}
+                  aria-label={`Next post: ${nextPost.title}`}
+                >
+                  Next →
+                  <br />
+                  <span aria-hidden="true">{nextPost.title}</span>
+                </Link>
+              )}
+            </th>
           </tr>
         </tbody>
       </table>

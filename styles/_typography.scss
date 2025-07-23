@@ -1,0 +1,43 @@
+$apache-font-family: Verdana, Geneva, Tahoma, sans-serif;
+$apache-font-size-base: 11pt;
+$apache-font-size-small: 9pt;
+$apache-font-size-large: 14pt;
+$apache-font-weight-normal: 400;
+$apache-font-weight-bold: 700;
+$apache-line-height-base: 1.5;
+$apache-heading-font-weight: 700;
+$apache-heading-color: $apache-black;
+$apache-heading-margin: 12px 0 6px 0;
+
+.apache-header {
+  display: block;
+  width: 100%;
+  background: $apache-red;
+  color: $apache-white;
+  font-weight: $apache-heading-font-weight;
+  font-size: 2rem;
+  text-align: center;
+  padding: 6px 0;
+  margin: 12px 0 6px 0;
+  border-radius: 2px;
+}
+
+// Optionally, for h1-h6.apache-header
+h1.apache-header {
+  font-size: 2.5rem;
+}
+h2.apache-header {
+  font-size: 2rem;
+}
+h3.apache-header {
+  font-size: 1.5rem;
+}
+h4.apache-header {
+  font-size: 1.2rem;
+}
+h5.apache-header {
+  font-size: 1rem;
+}
+h6.apache-header {
+  font-size: 0.9rem;
+}
