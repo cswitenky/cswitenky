@@ -5,7 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import { sortPostsByDate, isMarkdownFile, getPostIdFromFileName } from '../utils/posts';
 
-const postsDirectory = path.join(process.cwd(), 'posts');
+const postsDirectory = path.join(process.cwd(), 'content/posts');
 
 export interface IPostData {
   id: string;

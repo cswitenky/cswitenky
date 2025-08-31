@@ -1,42 +1,30 @@
-/*
----
-title: "Home"
-description: "Welcome to my personal website and blog. I'm a software engineer who loves solving everyday problems with tech."
----
-*/
-
 import Layout from '../components/layout';
 import styles from './page.module.scss';
 import { getSortedPostsData } from '../lib/posts';
+import { getHomePageData } from '../lib/pages';
 import Link from 'next/link';
 import Date from '../components/date';
 import config from '../config/site.config';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: config.MY_FULL_NAME,
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const homeData = await getHomePageData();
+  
+  return {
+    title: config.MY_FULL_NAME,
+    description: homeData.description,
+  };
+}
 
-export default function Home() {
+export default async function Home() {
   const allPostsData = getSortedPostsData();
+  const homeData = await getHomePageData();
 
   return (
     <Layout home>
       <section className={styles.headingMd}>
         <p>Hello, I'm {config.MY_FIRST_NAME}. 👋</p>
-        <p>
-          I'm a software engineer who loves solving everyday problems with tech. 
-          Espeically coming up with creative and efficient solutions to make life 
-          a little easier.
-        </p>
-        <p>
-          Feel free to check out my blog posts, where I share my thoughts and experiences 
-          on various topics related to software development, technology, and life 
-          in general.
-        </p>
-        <p>
-        Thanks for stopping by my little corner of the internet!
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: homeData.contentHtml }} />
       </section>
       <section className={`${styles.headingMd} ${styles.padding1px}`}>
         <h2 className={styles.headingLg}>📫 Recent Posts</h2>
