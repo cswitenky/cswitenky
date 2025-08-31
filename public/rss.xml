@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Connor Switenky]]></title>
+        <description><![CDATA[Connor Switenky's personal website]]></description>
+        <link>https://switenky.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 31 Aug 2025 22:12:29 GMT</lastBuildDate>
+        <atom:link href="https://switenky.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 31 Aug 2025 22:12:29 GMT</pubDate>
+        <copyright><![CDATA[© 2025 Connor Switenky]]></copyright>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[👐 So You Want to Learn Sign Language?]]></title>
+            <link>https://switenky.com/posts/learn-sign</link>
+            <guid isPermaLink="false">https://switenky.com/posts/learn-sign</guid>
+            <dc:creator><![CDATA[Connor Switenky]]></dc:creator>
+            <pubDate>Sun, 28 Jan 2024 08:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
