@@ -14,33 +14,6 @@ export enum Theme {
   Auto = 'system',
 }
 
-const RssIcon = () => (
-  <Link
-    href="/rss.xml"
-    aria-label="Go to RSS Feed"
-    data-umami-event="RSS Feed Button"
-    onClick={(e) => {
-      if (window.location.pathname === '/rss.xml') {
-        e.preventDefault();
-      }
-    }}
-  >
-    <Image
-      style={{
-        display: 'block',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginTop: '10px',
-      }}
-      priority
-      src="/rss.svg"
-      height={16}
-      width={16}
-      alt="RSS Feed Icon"
-    />
-  </Link>
-);
-
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -135,8 +108,6 @@ export default function Layout({ children, home }: any) {
         <Link href="/" aria-label="Go to home page">
           {config.BASE_URL}
         </Link>
-        <br />
-        <RssIcon />
       </footer>
     </div>
   );

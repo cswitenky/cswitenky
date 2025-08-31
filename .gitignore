@@ -15,7 +15,6 @@
 
 # postbuild
 robots.txt
-sitemap*.xml
 
 
 # production
@@ -29,6 +28,3 @@ sitemap*.xml
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# ignore generated rss
-rss.xml
