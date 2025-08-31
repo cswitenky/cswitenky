@@ -48,7 +48,11 @@ export const getSortedPostsData = (): IPostData[] => {
         date: matterResult.data.date || '',
         ...matterResult.data,
       } as IPostData;
-  });
+    })
+    .filter((post: IPostData) => {
+      // Filter out draft posts in production
+      return process.env.NODE_ENV === 'development' || !post.draft;
+    });
   // Sort posts by date
   return sortPostsByDate(allPostsData);
 };
@@ -71,6 +75,16 @@ export const getAllPostIds = (): { params: { id: string } }[] => {
       // Check if it's a file and not a directory
       const fullPath = path.join(postsDirectory, fileName);
       return fs.statSync(fullPath).isFile() && isMarkdownFile(fileName);
+    })
+    .filter((fileName: string) => {
+      // Filter out draft posts in production
+      if (process.env.NODE_ENV === 'development') return true;
+      
+      const fullPath = path.join(postsDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const matterResult = matter(fileContents);
+      
+      return !matterResult.data.draft;
     })
     .map((fileName: string) => {
       return {

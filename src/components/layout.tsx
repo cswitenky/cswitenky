@@ -1,7 +1,6 @@
 'use client'
 
 import styles from './layout.module.scss';
-import utilStyles from '../styles/utils.module.scss';
 import Image from 'next/image';
 import Script from 'next/script';
 import Link from 'next/link';
@@ -105,7 +104,7 @@ export default function Layout({ children, home }: any) {
         </div>
       </div>
       <header className={styles.header} role="presentation" aria-hidden="true">
-        <section className={utilStyles.headingMd}>
+        <section className={styles.headingMd}>
           <Link
             href="/"
             style={{ color: 'inherit', textDecoration: 'none' }}
@@ -119,12 +118,12 @@ export default function Layout({ children, home }: any) {
               }}
               priority
               src="/images/cswitenky.jpg"
-              className={utilStyles.borderCircle}
+              className={styles.borderCircle}
               height={home ? 180 : 144}
               width={home ? 180 : 144}
               alt={`Avatar of ${config.MY_FULL_NAME}`}
             />
-            <h1 className={utilStyles.heading2Xl}>{config.MY_FULL_NAME}</h1>
+            <h1 className={styles.heading2Xl}>{config.MY_FULL_NAME}</h1>
           </Link>
         </section>
       </header>

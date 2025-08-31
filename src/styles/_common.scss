@@ -1,0 +1,52 @@
+// Typography
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.lightText {
+  color: #666;
+}
+
+// Layout utilities
+.padding1px {
+  padding-top: 1px;
+}
+
+// Flexbox utilities
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Text alignment
+.textCenter {
+  text-align: center;
+}
+
+// Common spacing
+.margin1rem {
+  margin: 1rem 0;
+}
+
+.margin3rem {
+  margin: 3rem 0 0;
+}

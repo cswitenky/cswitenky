@@ -1,0 +1,38 @@
+@import '../../styles/common';
+
+.admin-loading {
+  @extend .flexCenter;
+  @extend .flexColumn;
+  height: 100vh;
+  gap: 1rem;
+  font-family: system-ui, sans-serif;
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  p {
+    margin: 0;
+    @extend .lightText;
+  }
+
+  .spinner {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #ccc;
+    border-top: 2px solid #0070f3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

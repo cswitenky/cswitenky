@@ -1,6 +1,7 @@
 ---
 title: '🧏 Deaf Events in Seattle'
 date: '2024-01-15'
+draft: true
 ---
 
 Have you ever wanted to learn [American Sign Language](https://en.wikipedia.org/wiki/American_Sign_Language) (ASL)? Or maybe you're already fluent in ASL and want to meet other Deaf people in the Seattle area? Or maybe you're just curious about Deaf culture and want to learn more? Look no further!

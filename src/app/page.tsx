@@ -1,5 +1,12 @@
+/*
+---
+title: "Home"
+description: "Welcome to my personal website and blog. I'm a software engineer who loves solving everyday problems with tech."
+---
+*/
+
 import Layout from '../components/layout';
-import utilStyles from '../styles/utils.module.scss';
+import styles from './page.module.scss';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
@@ -15,7 +22,7 @@ export default function Home() {
 
   return (
     <Layout home>
-      <section className={utilStyles.headingMd}>
+      <section className={styles.headingMd}>
         <p>Hello, I'm {config.MY_FIRST_NAME}. 👋</p>
         <p>
           I'm a software engineer who loves solving everyday problems with tech. 
@@ -31,12 +38,12 @@ export default function Home() {
         Thanks for stopping by my little corner of the internet!
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>📫 Recent Posts</h2>
+      <section className={`${styles.headingMd} ${styles.padding1px}`}>
+        <h2 className={styles.headingLg}>📫 Recent Posts</h2>
         <ul>
           {allPostsData.slice(0, 5).map(({ id, date, title }: any) => (
             <li key={id}>
-              <small className={utilStyles.lightText}>
+              <small className={styles.lightText}>
                 <Date dateString={date} />
               </small>
               {' - '}

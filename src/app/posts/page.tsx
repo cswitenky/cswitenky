@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import utilStyles from '../../styles/utils.module.scss';
+import styles from './page.module.scss';
 import { getSortedPostsData } from '../../lib/posts';
 import Link from 'next/link';
 import Date from '../../components/date';
@@ -17,7 +17,7 @@ export default function Posts() {
     <Layout>
       <h1>📫 All Posts</h1>
       <section
-        className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
+        className={`${styles.headingMd} ${styles.padding1px}`}
         aria-labelledby="all-posts-heading"
       >
         <h2 id="all-posts-heading" className="sr-only">
@@ -26,7 +26,7 @@ export default function Posts() {
         <ul>
           {allPostsData.map(({ id, date, title }: any) => (
             <li key={id}>
-              <small className={utilStyles.lightText}>
+              <small className={styles.lightText}>
                 <Date dateString={date} />
               </small>
               {' - '}

@@ -1,9 +1,8 @@
 import Layout from '../../../components/layout';
 import { getAdjacentPosts, getAllPostIds, getPostData } from '../../../lib/posts';
 import Date from '../../../components/date';
-import utilStyles from '../../../styles/utils.module.scss';
+import styles from './page.module.scss';
 import Link from 'next/link';
-import config from '../../../config/site.config';
 import { Metadata } from 'next';
 
 type Props = {
@@ -21,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const postData = await getPostData(id);
   return {
-    title: `${postData.title} — ${config.MY_FULL_NAME}`,
+    title: postData.title,
   };
 }
 
@@ -35,16 +34,16 @@ export default async function Post({ params }: Props) {
   return (
     <Layout>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <h1 className={styles.headingXl}>{postData.title}</h1>
+        <div className={styles.lightText}>
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }} />
       </article>
-      <table style={{ width: '100%' }} aria-label="Post navigation">
+      <table className={styles.postNavigation} aria-label="Post navigation">
         <tbody>
           <tr>
-            <th style={{ textAlign: 'left', width: '40%' }}>
+            <th>
               {previousPost && (
                 <Link href={`/posts/${previousPost.id}`} aria-label={`Previous post: ${previousPost.title}`}>
                   ← Previous
@@ -58,7 +57,7 @@ export default async function Post({ params }: Props) {
                 📫 All Posts
               </Link>
             </th>
-            <th style={{ textAlign: 'right', width: '40%' }}>
+            <th>
               {nextPost && (
                 <Link href={`/posts/${nextPost.id}`} aria-label={`Next post: ${nextPost.title}`}>
                   Next →
