@@ -1,17 +1,20 @@
-import Head from 'next/head';
 import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.scss';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
-import config from '../config';
+import config from '../config/site.config';
+import { Metadata } from 'next';
 
-export default function Home({ allPostsData }: any) {
+export const metadata: Metadata = {
+  title: config.MY_FULL_NAME,
+};
+
+export default function Home() {
+  const allPostsData = getSortedPostsData();
+
   return (
     <Layout home>
-      <Head>
-        <title>{config.MY_FULL_NAME}</title>
-      </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm {config.MY_FIRST_NAME}. 👋</p>
         <p>
@@ -47,13 +50,4 @@ export default function Home({ allPostsData }: any) {
       </section>
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
 }

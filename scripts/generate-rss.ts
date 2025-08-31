@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import RSS from 'rss';
 import { parseISO } from 'date-fns';
-import { getSortedPostsData } from './lib/posts'; // Adjust based on your actual posts utility
-import config from './config';
+import { getSortedPostsData } from '../src/lib/posts'; // Adjust based on your actual posts utility
+import config from '../src/config/site.config';
 
 function generateRssFeed() {
   console.log('Starting RSS generation...');

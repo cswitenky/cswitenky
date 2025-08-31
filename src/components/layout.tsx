@@ -1,10 +1,11 @@
-import Head from 'next/head';
+'use client'
+
 import styles from './layout.module.scss';
 import utilStyles from '../styles/utils.module.scss';
 import Image from 'next/image';
 import Script from 'next/script';
 import Link from 'next/link';
-import config from '../config';
+import config from '../config/site.config';
 import { ThemeProvider, useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
@@ -40,18 +41,6 @@ const RssIcon = () => (
     />
   </Link>
 );
-
-const PersonalAppsLink = () => (
-  <Link
-    href="https://myapplications.microsoft.com/?tenant=22e1f764-c1c7-4674-8540-f75bda2b6f14"
-    style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
-    data-umami-event="Personal Apps Link"
-    aria-label="Go to Personal Apps with Microsoft Entra Login"
-  >
-    Personal Apps (Microsoft Entra Login) 🔒
-  </Link>
-);
-
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
@@ -106,15 +95,6 @@ export default function Layout({ children, home }: any) {
         src="https://cloud.umami.is/script.js"
         data-website-id="0dc1f4cd-e2c8-4aa3-99bb-1c640d99ef01"
       />
-      <Head>
-        <html lang="en" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content={`${config.MY_FULL_NAME}'s personal website.`}
-        />
-        <meta name="og:title" content={config.MY_FULL_NAME} />
-      </Head>
       <div
         className={styles.toggleThemeButtonParent}
       >
@@ -153,9 +133,6 @@ export default function Layout({ children, home }: any) {
       </main>
       <footer style={{ textAlign: 'center', marginTop: '30px' }}>
         <hr />
-        <PersonalAppsLink />
-        <hr />
-        <br />
         <Link href="/" aria-label="Go to home page">
           {config.BASE_URL}
         </Link>

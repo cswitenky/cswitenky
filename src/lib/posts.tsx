@@ -3,27 +3,36 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import { sortPostsByDate, isMarkdownFile, getPostIdFromFileName } from '../utils/posts';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export interface PostData {
+export interface IPostData {
   id: string;
+  title: string;
+  date: string;
   contentHtml?: string;
   [key: string]: any;
 }
 
-export const getSortedPostsData = (): PostData[] => {
+export interface IPostMetadata {
+  title: string;
+  date: string;
+  [key: string]: any;
+}
+
+export const getSortedPostsData = (): IPostData[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames
     .filter((fileName: string) => {
       // Check if it's a file and not a directory
       const fullPath = path.join(postsDirectory, fileName);
-      return fs.statSync(fullPath).isFile();
+      return fs.statSync(fullPath).isFile() && isMarkdownFile(fileName);
     })
     .map((fileName: string) => {
       // Remove ".md" from file name to get id
-      const id = fileName.replace(/\.md$/, '');
+      const id = getPostIdFromFileName(fileName);
 
       // Read markdown file as string
       const fullPath = path.join(postsDirectory, fileName);
@@ -35,23 +44,19 @@ export const getSortedPostsData = (): PostData[] => {
       // Combine the data with the id
       return {
         id,
+        title: matterResult.data.title || '',
+        date: matterResult.data.date || '',
         ...matterResult.data,
-      };
+      } as IPostData;
   });
   // Sort posts by date
-  return allPostsData.sort((a: any, b: any) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  return sortPostsByDate(allPostsData);
 };
 
-export const getAdjacentPosts = (id: any): PostData[] => {
+export const getAdjacentPosts = (id: string): (IPostData | null)[] => {
   const sortedPostsData = getSortedPostsData();
 
-  const currentPostIndex = sortedPostsData.findIndex((x) => x.id == id);
+  const currentPostIndex = sortedPostsData.findIndex((x) => x.id === id);
 
   const previousPost = sortedPostsData[currentPostIndex + 1] ?? null;
   const nextPost = sortedPostsData[currentPostIndex - 1] ?? null;
@@ -59,24 +64,24 @@ export const getAdjacentPosts = (id: any): PostData[] => {
   return [previousPost, nextPost];
 };
 
-export const getAllPostIds = (): any => {
+export const getAllPostIds = (): { params: { id: string } }[] => {
   const fileNames = fs.readdirSync(postsDirectory);
   return fileNames
     .filter((fileName: string) => {
       // Check if it's a file and not a directory
       const fullPath = path.join(postsDirectory, fileName);
-      return fs.statSync(fullPath).isFile();
+      return fs.statSync(fullPath).isFile() && isMarkdownFile(fileName);
     })
-    .map((fileName: any) => {
+    .map((fileName: string) => {
       return {
         params: {
-          id: fileName.replace(/\.md$/, ''),
+          id: getPostIdFromFileName(fileName),
         },
       };
     });
 };
 
-export const getPostData = async (id: any): Promise<PostData> => {
+export const getPostData = async (id: string): Promise<IPostData> => {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
@@ -92,6 +97,8 @@ export const getPostData = async (id: any): Promise<PostData> => {
   // Combine the data with the id and contentHtml
   return {
     id,
+    title: matterResult.data.title || '',
+    date: matterResult.data.date || '',
     contentHtml,
     ...matterResult.data,
   };
