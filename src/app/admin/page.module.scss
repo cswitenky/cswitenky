@@ -1,6 +1,6 @@
 @use '../../styles/common' as *;
 
-.admin-loading {
+.adminLoading {
   @extend .flexCenter;
   @extend .flexColumn;
   height: 100vh;
@@ -17,15 +17,15 @@
     margin: 0;
     @extend .lightText;
   }
+}
 
-  .spinner {
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid #ccc;
-    border-top: 2px solid #0070f3;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
+.spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #ccc;
+  border-top: 2px solid #0070f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
