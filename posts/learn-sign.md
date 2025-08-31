@@ -1,6 +1,7 @@
 ---
 title: '👐 So You Want to Learn Sign Language?'
 date: '2024-01-28'
+draft: false
 ---
 I've been asked a few times recently about how to learn [**American Sign Language**](https://en.wikipedia.org/wiki/American_Sign_Language) (ASL), so I wanted to share some advice for those interested in starting their journey.
 
