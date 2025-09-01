@@ -2,6 +2,9 @@ backend:
   name: github
   repo: cswitenky/cswitenky
   branch: main
+  auth_type: "pkce"
+  app_id: "Ov23lizhHxWPpLAwghmtg"
+
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
