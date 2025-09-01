@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yourusername/your-repo
+  repo: cswitenky/cswitenky
   branch: main
   auth_type: implicit
   client_id: Ov23lizhHxWPpLAwghmt
