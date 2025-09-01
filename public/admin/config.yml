@@ -2,7 +2,7 @@ backend:
   name: github
   repo: cswitenky/cswitenky
   branch: main
-  base_url: https://lustrous-meerkat-bb6352.netlify.app/.netlify/functions
+  base_url: https://lustrous-meerkat-bb6352.netlify.app/
   auth_endpoint: auth-github
 
 # Uncomment below to enable drafts
