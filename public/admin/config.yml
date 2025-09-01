@@ -1,6 +1,9 @@
 backend:
   name: github
   repo: cswitenky/cswitenky
+  branch: main
+  auth_scope: repo
+  base_url: "https://switenky.com"
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
