@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: cswitenky/cswitenky
+  repo: yourusername/your-repo
   branch: main
-  base_url: https://lustrous-meerkat-bb6352.netlify.app/
-  auth_endpoint: auth-github
+  auth_type: implicit
+  client_id: Ov23lizhHxWPpLAwghmt
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
