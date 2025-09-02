@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main
   repo: "cswitenky/cswitenky"
-  base_url: https://purple-ocean-0c959db1e.1.azurestaticapps.net
+  base_url: https://purple-ocean-0c959db1e.1.azurestaticapps.net/api/
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
