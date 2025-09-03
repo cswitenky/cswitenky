@@ -2,7 +2,8 @@ backend:
   name: github
   branch: main
   repo: "cswitenky/cswitenky"
-  base_url: https://decap.switenky.com/api/
+  base_url: https://decap.switenky.com
+  auth_endpoint: auth
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
