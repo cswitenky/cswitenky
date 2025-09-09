@@ -1,12 +1,18 @@
 ---
 title: "⚡Raspberry Pi 5 Build: PoE-Powered with NVMe SSD"
-date: 2025-09-08T17:31:00.000-07:00
+date: 2025-09-09T09:15:00.000-07:00
 draft: true
 ---
-I was gifted a Raspberry Pi 5 not too long ago, and it sat idle for a bit-until I recently snagged [an older, used 8-port 150w Ubiquiti PoE switch](https://store.ui.com/us/en/products/us-8-150w).
+I was gifted a Raspberry Pi 5 not too long ago, and it sat idle for a bit, I finally decided to put it to use.
 
-One of the coolest things about the Pi 5 is its support for [HATs](https://en.wikipedia.org/wiki/Raspberry_Pi#Add-on_boards_(HATs)) (Hardware Attached on Top). There are tons to choose from, but one caught my eye: a HAT that combines [PoE](https://en.wikipedia.org/wiki/Power_over_Ethernet) and [NVMe SSD](https://en.wikipedia.org/wiki/NVM_Express) storage. Having had microSD cards fail on me in the past, upgrading to NVMe feels like a solid move for reliability and speed. Plus, with power and internet both delivered over a single Ethernet cable, the setup stays clean and simple.
+One of the coolest things about the Pi 5 is its support for [HATs](https://en.wikipedia.org/wiki/Raspberry_Pi#Add-on_boards_(HATs)) (Hardware Attached on Top). There are tons to choose from, but one caught my eye: a HAT that combines [PoE](https://en.wikipedia.org/wiki/Power_over_Ethernet) and [NVMe SSD](https://en.wikipedia.org/wiki/NVM_Express) storage. Since I've had microSD cards fail on me in the past, upgrading to NVMe feels like a solid move for reliability and speed. And with PoE, I can power the Pi and provide internet through a single Ethernet cable - keeping the setup clean and simple.
 
-I’m planning to connect it to an RTL-SDR antenna to track planes flying overhead using [ADS-B signals](https://en.wikipedia.org/wiki/Automatic_Dependent_Surveillance%E2%80%93Broadcast). Living in Seattle, I get plenty of SeaTac airport traffic right above me, so there’s always something interesting to monitor. I’ll also run a few lightweight Docker containers alongside.
+![](/images/raspberrypi5.jpg)
 
-As I continue my Kubernetes journey, I’ll eventually add this setup to my cluster as a node.
+*A (GeeekPi P33 HAT)\[https://pipci.jeffgeerling.com/hats/geeekpi-p33-m2-nvme-poe-hat.html] on my Raspberry Pi 5.*
+
+I recently snagged [a used 8-port 150w Ubiquiti PoE switch](<>). It's a bit older, but perfect for the task.
+
+Next up: I'm planning to connect the Pi to an RTL-SDR antenna to track planes flying overhead using ADS-B signals. Being in Seattle, I get plenty of SeaTac airport traffic right above me, so there's always something interesting to monitor. I'll also run a few lightweight Docker containers alongside for experiment.
+
+Eventually, as I continue my Kubernetes journey - this Pi will eventually join the cluster as a node.
