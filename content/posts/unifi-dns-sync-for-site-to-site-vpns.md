@@ -1,5 +1,5 @@
 ---
-title: UniFi DNS Sync for Site-to-Site VPNs
+title: 📡 UniFi DNS Sync for Site-to-Site VPNs
 date: 2025-09-08T00:00:00.000-07:00
 draft: true
 ---
