@@ -1,5 +1,5 @@
 ---
-title: Wireless Bass Shaker Setup for My Couch
+title: 🛋️ Wireless Bass Shaker Setup for My Couch
 date: 2025-09-08T17:18:00.000-07:00
 draft: true
 ---
