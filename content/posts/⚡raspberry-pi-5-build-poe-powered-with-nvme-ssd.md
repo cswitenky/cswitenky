@@ -1,7 +1,7 @@
 ---
 title: "⚡Raspberry Pi 5 Build: PoE-Powered with NVMe SSD"
 date: 2025-09-09T09:15:00.000-07:00
-draft: true
+draft: false
 ---
 I was gifted a Raspberry Pi 5 not too long ago, and it sat idle for a bit, I finally decided to put it to use.
 
