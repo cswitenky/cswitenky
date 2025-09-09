@@ -9,10 +9,10 @@ One of the coolest things about the Pi 5 is its support for [HATs](https://en.wi
 
 ![](/images/raspberrypi5.jpg)
 
-*A (GeeekPi P33 HAT)\[https://pipci.jeffgeerling.com/hats/geeekpi-p33-m2-nvme-poe-hat.html] on my Raspberry Pi 5.*
+*A [GeeekPi P33 HAT](https://pipci.jeffgeerling.com/hats/geeekpi-p33-m2-nvme-poe-hat.html) on my Raspberry Pi 5.*
 
-I recently snagged [a used 8-port 150w Ubiquiti PoE switch](<>). It's a bit older, but perfect for the task.
+I recently snagged [a used 8-port 150w Ubiquiti PoE switch](<>). It's a bit older, but perfect for powering a few of my PoE devices including this.
 
-Next up: I'm planning to connect the Pi to an RTL-SDR antenna to track planes flying overhead using ADS-B signals. Being in Seattle, I get plenty of SeaTac airport traffic right above me, so there's always something interesting to monitor. I'll also run a few lightweight Docker containers alongside for experiment.
+Next up: I'm planning to connect the Pi to an RTL-SDR antenna to track planes flying overhead using ADS-B signals. Being in Seattle, I get plenty of SeaTac airport traffic right above me, so there's always something interesting to monitor. I'll also run a few lightweight Docker containers alongside for experimenting.
 
-Eventually, as I continue my Kubernetes journey - this Pi will eventually join the cluster as a node.
+Eventually, as I continue my Kubernetes journey - this Pi will eventually join the cluster as a node. I'm excited for all tinkering to come with this device!
