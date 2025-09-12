@@ -1,6 +1,6 @@
 ---
 title: "⚡Raspberry Pi 5 Build: PoE-Powered with NVMe SSD"
-date: 2025-09-09T09:15:00.000-07:00
+date: 2025-09-09
 draft: false
 ---
 I was gifted a Raspberry Pi 5 not too long ago, and it sat idle for a bit, I finally decided to put it to use.
@@ -9,9 +9,9 @@ One of the coolest things about the Pi 5 is its support for [HATs](https://en.wi
 
 ![](/images/raspberrypi5.jpg)
 
-*A [GeeekPi P33 HAT](https://pipci.jeffgeerling.com/hats/geeekpi-p33-m2-nvme-poe-hat.html) on my Raspberry Pi 5.*
+*A [GeeekPi P33 HAT](https://pipci.jeffgeerling.com/hats/geeekpi-p33-m2-nvme-poe-hat.html) on my Raspberry Pi 5, powered by an Ethernet cable.*
 
-I recently snagged [a used 8-port 150w Ubiquiti PoE switch](<>). It's a bit older, but perfect for powering a few of my PoE devices including this.
+I recently snagged [a used 8-port 150w Ubiquiti PoE switch](https://store.ui.com/us/en/products/us-8-150w). It's a bit older, but perfect for powering a few of my PoE devices including this.
 
 Next up: I'm planning to connect the Pi to an RTL-SDR antenna to track planes flying overhead using ADS-B signals. Being in Seattle, I get plenty of SeaTac airport traffic right above me, so there's always something interesting to monitor. I'll also run a few lightweight Docker containers alongside for experimenting.
 
