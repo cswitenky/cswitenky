@@ -1,9 +1,12 @@
 backend:
   name: github
   branch: main
-  repo: "cswitenky/cswitenky"
+  repo: 'cswitenky/cswitenky'
   base_url: https://decap.switenky.com
   auth_endpoint: auth
+
+site_url: https://switenky.com
+logo_url: https://switenky.com/images/cswitenky.jpg
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
@@ -12,24 +15,49 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - name: "posts"
-    label: "Blog Posts"
-    folder: "content/posts"
+  - name: 'posts'
+    label: 'Blog Posts'
+    folder: 'content/posts'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false}
-      - {label: "Body", name: "body", widget: "markdown", modes: ["raw", "rich_text"], default_mode: "raw"}
-  
-  - name: "pages"
-    label: "Pages"
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'date',
+          format: 'YYYY-MM-DD',
+          date_format: 'YYYY-MM-DD',
+        }
+      - {
+          label: 'Draft',
+          name: 'draft',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          modes: ['raw', 'rich_text'],
+          default_mode: 'raw',
+        }
+
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/pages/home.md"
+      - label: 'Home Page'
+        name: 'home'
+        file: 'content/pages/home.md'
         fields:
-          - {label: "Title", name: "title", widget: "string", default: "Home"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Content", name: "body", widget: "markdown", required: false, modes: ["raw", "rich_text"], default_mode: "raw"}
+          - { label: 'Title', name: 'title', widget: 'string', default: 'Home' }
+          - { label: 'Description', name: 'description', widget: 'text' }
+          - {
+              label: 'Content',
+              name: 'body',
+              widget: 'markdown',
+              required: false,
+              modes: ['raw', 'rich_text'],
+              default_mode: 'raw',
+            }
