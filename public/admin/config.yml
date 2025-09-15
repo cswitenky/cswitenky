@@ -6,7 +6,6 @@ backend:
   auth_endpoint: auth
 
 site_url: https://switenky.com
-logo_url: https://switenky.com/images/cswitenky.jpg
 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
@@ -25,9 +24,10 @@ collections:
       - {
           label: 'Date',
           name: 'date',
-          widget: 'date',
+          widget: 'datetime',
           format: 'YYYY-MM-DD',
           date_format: 'YYYY-MM-DD',
+          time_format: false,
         }
       - {
           label: 'Draft',
