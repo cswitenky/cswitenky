@@ -19,13 +19,11 @@ export default function NotFound() {
             src="/404.png"
             height={225}
             width={400}
-            alt={'404'}
+            alt={'404 fingerspelled in American Sign Language'}
             className={styles.image}
           />
           <h1>Page Not Found</h1>
-          <p>
-            <Link href="/">Go Home</Link>
-          </p>
+          <Link href="/">Go Home</Link>
         </section>
       </main>
     </Layout>
