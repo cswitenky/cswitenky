@@ -3,7 +3,7 @@ title: 📡 UniFi DNS Sync for Site-to-Site VPNs
 date: 2025-09-14
 draft: true
 ---
-UniFi has [Site Magic](https://help.ui.com/hc/en-us/articles/16750417515159-UniFi-Gateway-Setting-Up-SD-WAN-with-UniFi-Site-Magic), but it's not so magic sometimes - because DNS records aren't synchronized across sites.
+UniFi has [Site Magic](https://help.ui.com/hc/en-us/articles/16750417515159-UniFi-Gateway-Setting-Up-SD-WAN-with-UniFi-Site-Magic), but it's not so magic sometimes - because DNS A records aren't synchronized across sites.
 
 To solve this, I wrote the core code for a small Python tool and used AI to help refine the structure and packaging. The result is [unifi-dns-sync](https://pypi.org/project/unifi-dns-sync/), a simple CLI utility for keeping DNS A records in sync across UniFi controllers.
 
@@ -54,5 +54,5 @@ It solved a real headache in my homelab and multi-site UniFi setup -- and hopefu
 
 * Takes in a list of records
 * Adds new records and removes unused 
-* Supports a 'diff'-like CLI output and dry-runs via CLI args
+* Provides diff-style output and supports dry-run mode via CLI arguments.
 * Easy to automate (Kubernetes, Ansible, CI/CD, etc.)
