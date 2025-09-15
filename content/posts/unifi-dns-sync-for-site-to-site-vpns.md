@@ -1,7 +1,7 @@
 ---
 title: 📡 UniFi DNS Sync for Site-to-Site VPNs
 date: 2025-09-14
-draft: true
+draft: false
 ---
 UniFi has [Site Magic](https://help.ui.com/hc/en-us/articles/16750417515159-UniFi-Gateway-Setting-Up-SD-WAN-with-UniFi-Site-Magic), but it's not so magic sometimes - because DNS A records aren't synchronized across sites.
 
