@@ -12,10 +12,13 @@ You can install it directly from PyPI with:
 ```python
 pip install unifi-dns-sync
 ```
+
 Source code is available on [GitHub](https://github.com/cswitenky/unifi-dns-sync).
 
 ## Usage
+
 First, create a `dns-records.json` file with the DNS A records you want managed by your UniFi controller:
+
 ```json
 [
   { "duck.switenky.com": "10.0.10.11" },
@@ -26,6 +29,7 @@ First, create a `dns-records.json` file with the DNS A records you want managed 
 ```
 
 Then run:
+
 ```
 python -m unifi_dns_sync dns-records.json \
   --controller https://10.0.0.1 \
@@ -36,7 +40,9 @@ python -m unifi_dns_sync dns-records.json \
 
 **Note:** any hostname without an explicit IP (like `horse.switenky.com`) will use the fallback specified by `--target-ip`.
 
+Here’s what that looks like when you run it: 
 
+![Command line interface demo of unifi-dns-sync syncing DNS records and displaying diff-style output](/images/demo.png)
 
 ## Conclusion
 
